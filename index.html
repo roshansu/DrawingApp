@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- NAV -->
+        <div class="flex fixed w-screen justify-center m-4">
+            <div style="resize: both;" class="flex gap-4 w-fit px-4 py-2 justify-center bg-gray-200 rounded-md shadow-md shadow-gray-500 ">
+                <div id="inputs" class="flex gap-2">
+                    <input id="color" value="black" class="bg-black color cursor-pointer text-black   shadow-md shadow-gray-400  rounded-full size-6  ">
+                    <input id="color" value="red" class="bg-red-800 color cursor-pointer shadow-md text-red-800 shadow-red-400  rounded-full size-6  " >
+                    <input id="color" value="blue" class="bg-blue-600 color cursor-pointer shadow-md text-blue-600 shadow-blue-400 rounded-full size-6  " >
+                    <input id="color" value="green" class="bg-green-600 color cursor-pointer text-green-600 shadow-md shadow-green-400 rounded-full size-6  ">
+                    <input id="color" class="shadow-md shadow-black color cursor-pointer " type="color">
+                    <input id="width" min="1" max="100" value="2" type="range">
+                </div>
+                <div id="buttons" class="flex gap-4">
+                    <button class="cursor-pointer" id="pencil"><i class="fa-solid fa-pencil hover:text-blue-400"></i></button>
+                    <button class="cursor-pointer" id="brush"><i class="fa-solid fa-paintbrush hover:text-blue-400"></i></button>
+                    <button class="cursor-pointer" id="line"><i class="fa-solid fa-grip-lines hover:text-blue-400"></i></button>
+                    <button class="cursor-pointer" id="circle"><i class="fa-regular fa-circle hover:text-blue-400"></i></button>
+                    <button class="cursor-pointer" id="rect"><i class="fa-regular fa-square hover:text-blue-400"></i></button>
+                    <button class="flex items-center gap-2" id="fill"><i class="fa-solid fa-square hover:text-blue-400"></i> fill</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CANVAS -->
+        <canvas id="mycanvas"></canvas>
+</body>
+<script src="./script.js"></script>
+</html>
